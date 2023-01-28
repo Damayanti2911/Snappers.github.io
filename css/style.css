@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 15vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: rgba(219, 211, 211, 0.2);
+  background-color: white;
+  position: fixed;
+}
+
+nav {
+  width: 100%;
+  height: 15vh;
+  background: rgba(219, 211, 211, 0.2);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  
+}
+
+nav .logo {
+  width: 25%;
+  text-align: center;
+  /*background: red;*/
+}
+
+nav .menu {
+  width: 33%;
+  display: flex;
+  justify-content: space-around;
+  font: "third_level"
+  
+}
+nav .menu a:hover {
+  color: #00b894;
+}
+nav .menu a {
+  width: 25%;
+  text-decoration: none;
+  color: rgb(130, 130, 130);
+  font: "third_level"
+}
+
+
+
+main {
+  width: 100%;
+  height: 125vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-position: center;
+  background-size: cover;
+  animation: image 10s infinite alternate;
+}
+
+
+
+section h1 {
+  margin: 30px 0 20px 0;
+  font-size: 55px;
+  font-weight: 700;
+  font-family: 'Times New Roman', Times, serif;
+  text-shadow: 2px 1px 5px black;
+  text-transform: uppercase;
+}
+
+
+
+section a {
+  padding: 12px 30px;
+  border-radius: 4px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.5s ease;
+}
+
+
+
+
+.change_content {
+  
+  background-position: center;
+  background-size: cover;
+  
+  animation: image 20s infinite alternate;
+}
+
+@keyframes image {
+  0% {
+    background-image: url("../Images/1.jpg");
+  }
+  20% {
+    background-image: url("../Images/2.png");
+  }
+  40% {
+    background-image: url("../Images/3.jpeg");
+  }
+  60% {
+    background-image: url("../Images/4.jpg");
+  }
+  80% {
+    background-image: url("../Images/5.jpeg");
+  }
+  100% {
+    background-image: url("../Images/6.webp");
+  }
+}
+
+
+section .text-container{
+   display:inline-flex;
+   padding-right: 139px;
+   padding-left: 150px;
+   background-color: rgba(219, 211, 211, 0.2);
+}
+section .text-container .text-box{
+  margin: 150px;
+  padding: 0px;
+}
+
+section p {
+  word-spacing: 5px;
+  margin-top: 10px;
+  font-family: "Garamond", serif;
+  font-size: 19px;
+}
+
+section h3 {
+  margin-top: 200px;
+  font-size: 22px;
+  font-family: "Garamond", serif;
+}
+section .abt{
+  color: black; 
+  margin-top: 250px;
+  padding-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 200px;
+}
+
+.fa {
+  padding: 1px;
+  font-size: 100px;
+  width: 10p;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+.fa-instagram {
+  background: rgba(219, 211, 211, 0.2);
+  color: black;
+}
+.fa-facebook {
+  background: rgba(219, 211, 211, 0.2);
+  color: black;
+}
+
+
+.parallax1 {
+  /* The image used */
+  background-image: url("../Images/WP1.jpg");
+
+  /* Set a specific height */
+  min-height: 750px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.caption span.border {
+  background-color: rgba(219, 211, 211, 0.2);
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 4px;
+  font: 400 15px/1.8 "Lato", sans-serif;
+}
+
+.parallax2 {
+  /* The image used */
+  background-image: url("../Images/WE1.jpg");
+
+  /* Set a specific height */
+  min-height: 900px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.caption1 {
+  position: absolute;
+  left: 0;
+  top: 200%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.caption1 span.border1 {
+  background-color: rgba(219, 211, 211, 0.2);
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 4px;
+  font: 400 20px/1.8 "Lato", sans-serif;
+}
+.parallax3 {
+  /* The image used */
+  background-image: url("../Images/WW1.webp");
+
+  /* Set a specific height */
+  min-height: 750px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
